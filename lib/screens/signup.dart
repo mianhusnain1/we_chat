@@ -90,7 +90,7 @@ class _SignupState extends State<Signup> {
                         BorderRadius.vertical(top: Radius.circular(40))),
                 child: _buildForm(),
               ),
-            )
+            ),
           ],
         ),
       ),

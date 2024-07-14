@@ -22,17 +22,23 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             const SizedBox(
               height: 100,
             ),
-            const Column(
+            Column(
               children: [
-                SizedBox(
-                  height: 100,
+                const SizedBox(
+                  height: 120,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    CircleAvatar(
-                      radius: 50,
-                      backgroundColor: Colors.orange,
+                    Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: darkColor, width: 2.5),
+                          borderRadius: BorderRadius.circular(100)),
+                      child: CircleAvatar(
+                        radius: 70,
+                        backgroundColor: Colors.white,
+                        child: Image.asset("assets/Icons/Logo.png"),
+                      ),
                     ),
                   ],
                 ),
