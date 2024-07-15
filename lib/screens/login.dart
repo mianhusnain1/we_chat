@@ -12,6 +12,23 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  // TextEditingController _namecontroller = TextEditingController();
+  TextEditingController _emailcontroller = TextEditingController();
+  TextEditingController _passwordcontroller = TextEditingController();
+  bool _isobscure = true;
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    // _namecontroller.dispose();
+    _emailcontroller.dispose();
+    _passwordcontroller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,9 +94,6 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   _buildForm() {
-    TextEditingController _emailcontroller = TextEditingController();
-    TextEditingController _passwordcontroller = TextEditingController();
-    bool _isobscure = true;
     return Form(
         child: Column(
       children: [

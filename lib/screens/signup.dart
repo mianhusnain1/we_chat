@@ -10,6 +10,23 @@ class Signup extends StatefulWidget {
 }
 
 class _SignupState extends State<Signup> {
+  TextEditingController _namecontroller = TextEditingController();
+  TextEditingController _emailcontroller = TextEditingController();
+  TextEditingController _passwordcontroller = TextEditingController();
+  bool _isobscure = true;
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _namecontroller.dispose();
+    _emailcontroller.dispose();
+    _passwordcontroller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,10 +98,6 @@ class _SignupState extends State<Signup> {
   }
 
   _buildForm() {
-    TextEditingController _namecontroller = TextEditingController();
-    TextEditingController _emailcontroller = TextEditingController();
-    TextEditingController _passwordcontroller = TextEditingController();
-    bool _isobscure = true;
     return SingleChildScrollView(
         child: Column(
       children: [

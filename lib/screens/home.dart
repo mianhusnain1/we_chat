@@ -14,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           const SizedBox(
-            height: 40,
+            height: 50,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12.0),
@@ -34,14 +34,50 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontFamily: 'Lato - Bold',
                       fontSize: 25),
                 ),
+                Spacer(),
                 IconButton(
                     onPressed: () {},
                     icon: const Icon(
                       Icons.search,
                       color: Colors.grey,
-                    ))
+                    )),
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.more_vert,
+                      color: Colors.grey,
+                    )),
+                // PopupMenuButton<String>(
+                //   onSelected: (String value) {
+                //     // Handle the selected menu option here
+                //   },
+                //   itemBuilder: (BuildContext context) {
+                //     return {'Option 1', 'Option 2', 'Option 3'}
+                //         .map((String choice) {
+                //       return PopupMenuItem<String>(
+                //         value: choice,
+                //         child: Text(choice),
+                //       );
+                //     }).toList();
+                //   },
+                //   icon: Icon(Icons.more_vert),
+                // ),
               ],
             ),
+          ),
+          SizedBox(
+            height: 40,
+          ),
+          Row(
+            children: [
+              Text(
+                "Chat",
+                style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: 40,
+                    fontFamily: "Lato - Black"),
+              )
+            ],
           )
         ],
       ),
