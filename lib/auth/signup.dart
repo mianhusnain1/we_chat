@@ -279,7 +279,7 @@ class _SignupState extends State<Signup> {
                       // Handle other Firebase Auth exceptions
                       Dialogs.errorDialogs(
                         context,
-                        "Er ror",
+                        "Error",
                         "Something  went wrong. Please try again later.",
                         () => Navigator.of(context).pop(),
                       );
