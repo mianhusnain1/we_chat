@@ -280,7 +280,7 @@ class _SignupState extends State<Signup> {
                       Dialogs.errorDialogs(
                         context,
                         "Error",
-                        "Something went wrong. Please try again later.",
+                        "Something  went wrong. Please try again later.",
                         () => Navigator.of(context).pop(),
                       );
                     }
