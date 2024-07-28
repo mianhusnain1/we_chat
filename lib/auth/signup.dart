@@ -265,7 +265,7 @@ class _SignupState extends State<Signup> {
                       Dialogs.errorDialogs(
                         context,
                         "Error",
-                        "Please correct your email format.",
+                        "Please  correct your email format.",
                         () => Navigator.of(context).pop(),
                       );
                     } else if (e.code == "network-request-failed") {
