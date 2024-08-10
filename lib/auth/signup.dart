@@ -272,7 +272,7 @@ class _SignupState extends State<Signup> {
                       Dialogs.errorDialogs(
                         context,
                         "Error",
-                        "Please check your internet connection.",
+                        "Pleasinternet connection.",
                         () => Navigator.of(context).pop(),
                       );
                     } else {
