@@ -1,6 +1,6 @@
 import 'package:chat__application/main.dart';
-import 'package:chat__application/screens/login.dart';
-import 'package:chat__application/screens/signup.dart';
+import 'package:chat__application/auth/login.dart';
+import 'package:chat__application/auth/signup.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -14,6 +14,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
